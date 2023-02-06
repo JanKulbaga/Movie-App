@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Movie App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/movieCard.css" />
+    <link rel="stylesheet" href="css/movieModal.css" />
+    <script src="js/index.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="title">Movies</a>
+        <form class="form" data-form>
+          <input type="text" class="search" data-search placeholder="Search" />
+        </form>
+      </div>
+    </header>
+    <section data-buttons-container class="buttons-container container">
+      <button data-button class="btn active">Popular</button>
+      <button data-button class="btn">Top Rated</button>
+      <button data-button class="btn">Alphabetical</button>
+      <button data-button class="btn">Reverse Alphabetical</button>
+    </section>
+    <main class="container main" data-movie-container></main>
+    <footer data-pagination-container class="container pagination-container">
+      <button data-pagination-button class="pagination-btn active">1</button>
+      <button data-pagination-button class="pagination-btn">2</button>
+      <button data-pagination-button class="pagination-btn">3</button>
+      <button data-pagination-button class="pagination-btn">4</button>
+      <button data-pagination-button class="pagination-btn">5</button>
+    </footer>
+  </body>
+</html>

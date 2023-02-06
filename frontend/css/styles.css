@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: hsl(237, 26%, 16%);
+  --primary-color: hsl(242, 28%, 22%);
+  --header-title-color: hsl(200, 95%, 75%);
+  --search-color: hsl(240, 22%, 47%);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: min(90%, 57.5rem);
+  margin-inline: auto;
+  padding: 1em 0;
+}
+
+.header {
+  background-color: var(--primary-color);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  display: block;
+  font-size: 3rem;
+  color: var(--header-title-color);
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid var(--search-color);
+  padding: 1rem;
+  border-radius: 3.125em;
+  color: var(--search-color);
+}
+
+.search::placeholder {
+  color: var(--search-color);
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  border: 2px solid var(--search-color);
+  border-radius: 3.125rem;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+}
+
+.pagination-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.pagination-btn {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pagination-btn.active {
+  background-color: var(--search-color);
+}
+
+.buttons-container .btn:is(:hover, :focus, .active) {
+  background-color: hsl(242, 28%, 35%);
+  border: 2px solid hsl(240, 22%, 60%);
+}
+
+@media screen and (max-width: 48em) {
+  .buttons-container {
+    grid-template-columns: 1fr;
+  }
+}

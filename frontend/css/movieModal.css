@@ -1,0 +1,66 @@
+.movie-modal-bg {
+  background-color: hsla(240, 27%, 18%, 0.5);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-modal-close-button {
+  position: relative;
+  display: inline-block;
+  left: 33.6rem;
+  top: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.movie-modal {
+  background-color: hsl(242, 28%, 22%);
+  border-radius: 1.5625rem;
+  color: white;
+  width: min(90%, 37.5rem);
+  margin-inline: auto;
+  padding: 1.5em;
+}
+
+.movie-modal-top {
+  display: flex;
+  gap: 1rem;
+}
+
+.movie-modal-image {
+  max-width: 40%;
+}
+
+.movie-modal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.movie-modal-info .vote-average {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.movie-modal-genres {
+  margin: 1rem 0;
+  display: flex;
+  flex-basis: 100%;
+  gap: 2rem;
+}
+
+.movie-modal-genres .btn {
+  width: 100%;
+}
+
+.movie-modal-description-title {
+  font-size: 1.5rem;
+  color: hsl(200, 95%, 75%);
+}
