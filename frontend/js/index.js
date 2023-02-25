@@ -24,7 +24,7 @@ const endPoints = {
 let endPointName = endPoints.popular;
 let pageNumber = 1;
 
-getMovies(`${API_URL}${endPointName}`);
+getMovies(`${API_URL}${endPointName}?page=${pageNumber}`);
 
 async function getMovies(apiUrl) {
   const response = await fetch(apiUrl);
