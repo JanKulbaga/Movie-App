@@ -24,7 +24,7 @@ python main.py
 python3 main.py
 ```
 
-V aplikácií existujú 4 možné end pointy, s ktorými môžeme pracovať
+V aplikácií existujú 5 možných end pointov, s ktorými môžeme pracovať
 
 | End Point                                                | Popis                                                        |
 | -------------------------------------------------------- | ------------------------------------------------------------ |
